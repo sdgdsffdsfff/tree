@@ -31,7 +31,8 @@ body {
 
 .tree_headBg {
     background-image: url(/img/tree_head.svg);
-    background-repeat: round;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 6.1rem;
 }
 
