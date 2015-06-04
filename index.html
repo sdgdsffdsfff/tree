@@ -1,42 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>开源项目 - MXC</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <link rel="stylesheet"  href="/index.css">
-    </head>
-    <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">您使用的浏览器版本<strong>过老</strong>，请<a href="http://browsehappy.com/">使用最新的浏览器</a>来提升浏览体验。</p>
-        <![endif]-->
-        <ul class="tree_nav">
-            <li style="background:#3d7823;">
-                <a href="#FFF">FFF</a>
-            </li>
-            <li style="background:#232478;">
-                <a href="#straw">字体抽取工具</a>
-            </li>
-        </ul>
-        <div class="tree_banner" id="FFF" style="background:#3d7823;">
-            <a href="http://192.168.112.94:8888/fff/README.html" target="_blank">
-            <div class="tree_bannerBox">
-                <img src="/img/FFF.svg">
-                <h3>FFF</h3>
-                <h6>1号店轻量级高性能JavaScript基础库，为拥抱移动互联网设计，专注移动web项目</h6>
-            </div>
-            </a>
-        </div>
-        <div class="tree_banner" id="straw" style="background:#232478;">
-            <a href="http://192.168.112.94:8989/" target="_blank">
-            <div class="tree_bannerBox">
-                <img src="/img/FFF.svg">
-                <h3>Straw</h3>
-                <h6>1号店webfont工具</h6>
-            </div>
-            </a>
-        </div>
-        <script src="/index.js"></script>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>开源项目 - MXC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="shortcut icon" href="/mxc.ico"/>
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browsehappy">您使用的浏览器版本<strong>过老</strong>，请<a href="http://browsehappy.com/">使用最新的浏览器</a>来提升浏览体验。</p>
+<![endif]-->
+<header class="tree_head"></header>
+
+
+<div class="search_box">
+    <button type="button" class="search_btn"></button>
+    <input type="search" class="search_input" id="J_search" autocomplete="off" placeholder="请输入关键字" autofocus
+           x-webkit-speech>
+</div>
+
+<div id="J_project"></div>
+<script src="/js/fuse.js"></script>
+<script src="/js/index.js"></script>
+</body>
 </html>

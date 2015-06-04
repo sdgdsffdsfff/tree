@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 100px;
+}
+body {
+    font-size: 0.12rem;
+    background-color: #2e2b1d;
+    text-align: center;
+    padding-bottom: 100px;
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+
+
+
+.tree_head{
+    width: 100%;
+    height: 5.65rem;
+    background-color: #e7cd3c;
+    background-image: url(/img/tree_head.svg);
+    background-repeat:round;
+}
+
+.search_box{
+    width: 100%;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-justify-content:center;
+    justify-content: center;
+    padding-top:0.25rem;
+}
+
+.search_btn{
+    width: 0.65rem;
+    height: 0.65rem;
+    border: none;
+    background-color: #675f35;
+    background-image: url(/img/search_btn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: none;
+}
+
+.search_input{
+    width: 9.63rem;
+    height: 0.65rem;
+    border: none;
+    background-color: #413c20;
+    color: #928124;
+    font-size: 0.2rem;
+    text-indent: 25px;
+    outline: none;
+    -webkit-appearance:none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #928124;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #928124;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #928124;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #928124;
+}
+
+.tree_project{
+    width: 100%;
+    display:-webkit-flex;
+    display:flex;
+    -webkit-justify-content:center;
+    justify-content: center;
+    padding-top:1.3rem;
+}
+
+.tree_projectBox{
+    position: relative;
+    width: 10.28rem;
+    height: 3.4rem;
+    background-color: #e7cd3c;
+}
+
+.tree_projectBox:after{
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: 25px;
+    width: 0.48rem;
+    height: 0.48rem;
+    background-image: url(/img/icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tree_projectImg{
+    position: absolute;
+    left: 0.25rem;
+    top: -0.78rem;
+    width: 4.45rem;
+    height: 3.85rem;
+}
+
+.tree_projectSynopsis{
+    position: absolute;
+    width: 49%;
+    right: 0;
+    padding: 0.25rem 0.25rem;
+    color: #2e2b1d;
+    text-align: left;
+    line-height: 0.55rem;
+        overflow-x: hidden;
+    overflow-y: auto;
+    height: 2.9rem;
+    word-break: break-all;
+
+}
+.tree_projectSynopsis h3{
+    font-size: 0.4rem;
+    font-weight: normal;
+}
+
+.tree_projectSynopsis h4{
+    font-size: 0.24rem;
+        font-weight: normal;
+
+}
+
+.tree_projectSynopsis h5{
+    font-size: 0.24rem;
+    color: #928124;
+        font-weight: normal;
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .tree_head{
+        display: none;
+    }
+    .tree_projectImg{
+        display: none;
+    }
+    .tree_projectSynopsis{
+        width: auto;
+        left: 0;
+    }
+  }
+
+
+
+
+
