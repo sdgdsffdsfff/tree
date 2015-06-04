@@ -17,7 +17,14 @@ var projectList = [{
     imgUrl: 'img/project/leaf.jpg',
     des: '超好用的工作流平台',
     url: 'http://192.168.112.94:9001/'
-}];
+}, {
+    name: 'Straw 字体抽取',
+    author: '吴迪 成克彬 刘兵',
+    imgUrl: 'img/project/straw.jpg',
+    des: '想要什么样的字体,这里都可以为你完成!',
+    url: 'http://192.168.112.94:8989/'
+}
+];
 
 drawList(projectList);
 
@@ -26,7 +33,6 @@ var fuse = new Fuse(projectList, {
 });
 
 var treeSearch = document.getElementById('J_search');
-
 
 
 treeSearch.addEventListener('input', function (e) {
