@@ -18,6 +18,12 @@ var projectList = [{
     des: '超好用的工作流平台',
     url: 'http://192.168.112.94:9001/'
 }, {
+    name: '竞品分析',
+    author: '王镭 许传颖  刘茵竺 赵芝晴',
+    imgUrl: 'img/project/jp.jpg',
+    des: '电商APP竞品分析系统',
+    url: 'http://192.168.8.166/ca/'
+}, {
     name: 'Straw 字体抽取',
     author: '吴迪 成克彬 刘兵',
     imgUrl: 'img/project/straw.jpg',
