@@ -30,7 +30,7 @@ body {
 }
 
 .tree_headBg {
-    background-image: url(/img/tree_head.svg);
+    background-image: url(../img/tree_head.svg);
     background-repeat: no-repeat;
     background-position: center;
     height: 6.1rem;
@@ -50,7 +50,7 @@ body {
     height: 0.65rem;
     border: none;
     background-color: #675f35;
-    background-image: url(/img/search_btn.svg);
+    background-image: url(../img/search_btn.svg);
     background-repeat: no-repeat;
     background-position: center;
     outline: none;
@@ -111,7 +111,7 @@ body {
     bottom: 25px;
     width: 0.48rem;
     height: 0.48rem;
-    background-image: url(/img/icon.svg);
+    background-image: url(../img/icon.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
