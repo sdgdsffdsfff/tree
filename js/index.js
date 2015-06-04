@@ -14,7 +14,7 @@ var projectBox = document.getElementById('J_project');
 var projectList = [{
     name: '叶子',
     author: '刘兵 施峰峰 董亦颂',
-    imgUrl: '../img/project/leaf.jpg',
+    imgUrl: 'img/project/leaf.jpg',
     des: '超好用的工作流平台',
     url: 'http://192.168.112.94:9001/'
 }];
