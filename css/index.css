@@ -19,8 +19,12 @@ body {
     width: 100%;
     height: 5.65rem;
     background-color: #e7cd3c;
+}
+
+.tree_headBg{
     background-image: url(/img/tree_head.svg);
     background-repeat:round;
+    height: 6.1rem;
 }
 
 .search_box{
