@@ -11,13 +11,7 @@ var str = '<div class="tree_project">' +
 
 var projectBox = document.getElementById('J_project');
 
-var projectList = [{
-    name: '叶子',
-    author: '刘兵 施峰峰 董亦颂',
-    imgUrl: 'img/project/leaf.jpg',
-    des: '超好用的工作流平台',
-    url: 'http://192.168.112.94:9001/'
-}, {
+var projectList = [ {
     name: '竞品分析',
     author: '王镭 许传颖  刘茵竺 赵芝晴',
     imgUrl: 'img/project/jp.jpg',
@@ -28,7 +22,7 @@ var projectList = [{
     author: '吴迪 成克彬 刘兵',
     imgUrl: 'img/project/straw.jpg',
     des: '想要什么样的字体,这里都可以为你完成!',
-    url: 'http://192.168.112.94:8989/'
+    url: 'http://192.168.8.166:8989/'
 }
 ];
 
