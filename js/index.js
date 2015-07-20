@@ -23,7 +23,8 @@ var projectList = [
         name: 'bird 微信模板',
         author: '刘兵 吴頔 张晶晶 周仙保 王贝贝',
         imgUrl: 'img/project/bird.jpg',
-        des: 'bird是一个小而美的H5创意平台。通过简单可视化操作即可进行HTML5宣传页面制作,通过bird的模板,轻松制作场景应用,开启微信营销之门。'
+        des: 'bird是一个小而美的H5创意平台。通过简单可视化操作即可进行HTML5宣传页面制作,通过bird的模板,轻松制作场景应用,开启微信营销之门。',
+        url: 'http://120.132.50.71/wxms/'
     },
     {
         name: '竞品分析',
