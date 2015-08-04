@@ -79,6 +79,7 @@ function drawList(data) {
 new Vivus('tree_bg', {
     type: 'async',
     duration: 50,
+    start:'autostart',
     file: './img/tree_bg.svg'
 }, function (svg) {
     var el = svg.el;
