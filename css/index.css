@@ -9,10 +9,18 @@ html {
 
 body {
     font-size: 0.12rem;
-    background-color: #2e2b1d;
+    background-color: #e7cd3c;
     text-align: center;
     padding-bottom: 100px;
     font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+
+object{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }
 
 .browsehappy {
@@ -23,155 +31,92 @@ body {
     line-height: 30px;
 }
 
-.tree_head {
-    width: 100%;
-    height: 5.65rem;
-    background-color: #e7cd3c;
+.tree_content{
+    width: 10rem;
+    margin: 0 auto;
 }
 
-.tree_headBg {
-    background-image: url(../img/tree_head.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 6.1rem;
+.tree_head{
+    text-align: right;
+    padding: 0.2rem 0 3rem 0;
 }
 
-.search_box {
-    width: 100%;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    padding-top: 0.25rem;
-}
-
-.search_btn {
-    width: 0.65rem;
-    height: 0.65rem;
-    border: none;
-    background-color: #675f35;
-    background-image: url(../img/search_btn.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    outline: none;
-}
-
-.search_input {
-    width: 9.63rem;
-    height: 0.65rem;
-    border: none;
-    background-color: #413c20;
-    color: #928124;
-    font-size: 0.2rem;
-    text-indent: 25px;
-    outline: none;
-    -webkit-appearance: none;
-}
-
-::-webkit-input-placeholder {
-    /* WebKit browsers */
-    color: #928124;
-}
-
-:-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: #928124;
-}
-
-::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: #928124;
-}
-
-:-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-    color: #928124;
-}
-
-.tree_project {
-    width: 100%;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    padding-top: 1.3rem;
-}
-
-.tree_projectBox {
-    position: relative;
-    width: 10.28rem;
-    height: 3.4rem;
-    background-color: #e7cd3c;
-}
-
-.tree_projectBox:after {
-    position: absolute;
-    content: '';
-    right: 0;
-    bottom: 25px;
-    width: 0.48rem;
-    height: 0.48rem;
-    background-image: url(../img/icon.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.tree_projectImg {
-    position: absolute;
-    left: 0.25rem;
-    top: -0.78rem;
-    width: 4.45rem;
-    height: 3.85rem;
-}
-
-.tree_projectSynopsis {
-    position: absolute;
-    width: 49%;
-    right: 0;
-    padding: 0.25rem 0.25rem;
+.tree_head a{
+    display: inline-block;
+    width: 98px;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border: 1px solid #73661e;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.18rem;
     color: #2e2b1d;
+    text-decoration: none;
+}
+
+.tree_flexContainer {
+    display: flex;
+    width: 100%;
+    height: 4.45rem;
+    font-weight: normal;
+    color: #000;
+    text-decoration: none;
+}
+
+.tree_flexItem {
+    width: 50%;
+    height: 4.45rem;
+}
+
+.tree_contentBox{
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+
+.tree_projectInfoBox{
+    position: relative;
+    height: 80px;
+    margin: 57px 20px 0 20px;
+    border: 2px solid #bdbdbd;
     text-align: left;
-    line-height: 0.55rem;
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 2.9rem;
-    word-break: break-all;
-
+    line-height: 80px;
 }
 
-.tree_projectSynopsis h3 {
+.tree_projectInfoBox h3{
+    position: absolute;
     font-size: 0.4rem;
+    top: -25px;
+    left: 0.1rem;
+    padding: 0 0.1rem;
+    line-height: 0.4rem;
+    background-color: #f8f8f8;
     font-weight: normal;
 }
 
-.tree_projectSynopsis h4 {
+.tree_projectInfoBox h4{
     font-size: 0.24rem;
     font-weight: normal;
+    padding: 0 0.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tree_projectInfo{
+    font-weight: normal;
+    padding: 0.15rem 0.3rem;
     line-height: 0.3rem;
+    font-size: 0.2rem;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 1024px) {
 
 }
 
-.tree_projectSynopsis h5 {
-    font-size: 0.24rem;
-    color: #928124;
-    font-weight: normal;
 
-}
-
-@media screen and (max-width: 500px) {
-    .tree_head {
-        display: none;
-    }
-
-    .tree_projectImg {
-        display: none;
-    }
-
-    .tree_projectSynopsis {
-        width: auto;
-        left: 0;
-    }
-}
 
 
 

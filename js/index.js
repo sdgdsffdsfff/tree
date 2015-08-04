@@ -1,23 +1,34 @@
-var str = '<div class="tree_project">' +
-    '<a href="%url%" class="tree_projectBox">' +
-    '<img class="tree_projectImg" src="%imgUrl%" alt="%name%" />' +
-    '<div class="tree_projectSynopsis">' +
+var str = '<a href="%url%" class="tree_flexContainer">' +
+    '<img class="tree_flexItem" src="%imgUrl%" alt="%name%">' +
+    '<div class="tree_flexItem">' +
+    '<div class="tree_projectInfoBox">' +
     '<h3>%name%</h3>' +
-    '<h5>%author%</h5>' +
-    '<h4>%des%</h4>' +
+    '<h4>%author%</h4>' +
     '</div>' +
-    '</a>' +
-    '</div>';
+    '<h5 class="tree_projectInfo">%des%</h5>' +
+    '</div>' +
+    '</a>';
+
+var evenStr = '<a href="%url%" class="tree_flexContainer">' +
+    '<div class="tree_flexItem">' +
+    '<div class="tree_projectInfoBox">' +
+    '<h3>%name%</h3>' +
+    '<h4>%author%</h4>' +
+    '</div>' +
+    '<h5 class="tree_projectInfo">%des%</h5>' +
+    '</div>' +
+    '<img class="tree_flexItem" src="%imgUrl%" alt="%name%">' +
+    '</a>';
 
 var projectBox = document.getElementById('J_project');
 
 var projectList = [
     {
-        name:'MXC 博客',
-        author:'MXC',
-        imgUrl:'img/project/blog.jpg',
-        des:'1号店用户体验中心(MXC)的博客，这里将汇集所有MXC成员的研究以及创新成果。',
-        url:'http://mxc.yhd.com/blog'
+        name: 'MXC 博客',
+        author: 'MXC',
+        imgUrl: 'img/project/blog.jpg',
+        des: '1号店用户体验中心(MXC)的博客，这里将汇集所有MXC成员的研究以及创新成果。',
+        url: 'http://mxc.yhd.com/blog'
     },
     {
         name: 'bird 模板',
@@ -43,33 +54,37 @@ var projectList = [
 
 drawList(projectList);
 
-var fuse = new Fuse(projectList, {
-    keys: ['name']
-});
-
-var treeSearch = document.getElementById('J_search');
-
-
-treeSearch.addEventListener('input', function (e) {
-    var q = treeSearch.value;
-    if (q == '') {
-        drawList(projectList);
-    } else {
-        var data = fuse.search(q);
-        drawList(data);
-    }
-}, false);
 
 function drawList(data) {
     var html = '';
     if (data.length > 0) {
         data.forEach(function (o, i) {
-            html += str.replace(/(%(\w+)%)/g, function ($1, $2, $3) {
-                return o[$3] ? o[$3] : '';
-            });
+            if (i % 2 == 0) {
+                html += str.replace(/(%(\w+)%)/g, function ($1, $2, $3) {
+                    return o[$3] ? o[$3] : '';
+                });
+            } else {
+                html += evenStr.replace(/(%(\w+)%)/g, function ($1, $2, $3) {
+                    return o[$3] ? o[$3] : '';
+                });
+            }
+
         });
     }
     projectBox.innerHTML = '';
     projectBox.innerHTML = html;
 
 }
+
+new Vivus('tree_bg', {
+    type: 'async',
+    duration: 50,
+    file: './img/tree_bg.svg'
+}, function (svg) {
+    var el = svg.el;
+    var paths = el.getElementsByClassName('cls-4');
+    paths = [].slice.call(paths);
+    paths.forEach(function (path) {
+        path.setAttribute('class', 'cls-4 cls-4-hover animated fadeIn');
+    });
+});
