@@ -38,7 +38,7 @@ object{
 
 .tree_head{
     text-align: right;
-    padding: 0.2rem 0 3rem 0;
+    padding: 20px 0 215px 0;
 }
 
 .tree_head a{
@@ -114,7 +114,20 @@ object{
 
 
 @media screen and (max-width: 1024px) {
+    .tree_content{
+        width: 100%;
+    }
+    .tree_flexContainer{
+        display: block;
+        height: auto;
+    }
+    .tree_flexItem{
+        width: 100%;
+    }
 
+    .tree_head{
+        padding: 60px 0 60px 0;
+    }
 }
 
 

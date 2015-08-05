@@ -31,6 +31,13 @@ var projectList = [
         url: 'http://mxc.yhd.com/blog'
     },
     {
+        name: '用户研究结果展示系统',
+        author: '吴頔 刘兵 陈正飞 费召辉',
+        imgUrl: 'img/project/ux.jpg',
+        des: '用户研究的结果都在这里 你可以倾听用户的声音 了解用户的需求',
+        url: 'http://192.168.8.166:8787/'
+    },
+    {
         name: 'bird 模板',
         author: '刘兵 吴頔 张晶晶 周仙保 王贝贝',
         imgUrl: 'img/project/bird.jpg',
